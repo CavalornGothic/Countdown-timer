@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+$h1Font: 'PT Sans', sans-serif;
+$h2Font: 'Inconsolata', monospace;
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/background-train.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    .timer-box
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        h1, h2
+        {
+            padding: 0;
+            margin: 0;
+        }
+
+        h1
+        {
+            font-size: 56px;
+            font-family: $h1Font;
+            text-shadow: 1px 2px 3px #666;
+        }
+
+        h2 
+        {
+            font-family: $h2Font;
+            text-shadow: 1px 2px 3px #666;
+        }
+
+        .time
+        {
+            width: calc(100% / 5);
+            height: 200px;
+            text-align: center;
+            color: white;
+            .arrow {
+                font-size: 45px;
+            }
+        }
+
+    }
+
+    .controls
+    {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+        button
+        {
+            width: 250px;
+            height: 70px;
+            border: none;
+            border-radius: 40px;
+            font-family: $h1Font;
+            color: white;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        .start
+        {
+            background-color: #57A773;
+            transition: background-color 2s;
+            &:hover{
+                background-color: #3ac098;
+            }
+        }
+        .stop
+        {
+            background-color: #DF3B57;
+            transition: background-color 2s;
+            &:hover{
+                background-color: #f7506b;
+            }
+        }
+        .resume
+        {
+            background-color: #484D6D;
+            transition: background-color 2s;
+            &:hover{
+                background-color: #6e749c;
+            }
+        }
+    }
+}

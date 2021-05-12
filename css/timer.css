@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/background-train.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+html .timer-box, body .timer-box {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+html .timer-box h1, html .timer-box h2, body .timer-box h1, body .timer-box h2 {
+  padding: 0;
+  margin: 0;
+}
+
+html .timer-box h1, body .timer-box h1 {
+  font-size: 56px;
+  font-family: "PT Sans", sans-serif;
+  text-shadow: 1px 2px 3px #666;
+}
+
+html .timer-box h2, body .timer-box h2 {
+  font-family: "Inconsolata", monospace;
+  text-shadow: 1px 2px 3px #666;
+}
+
+html .timer-box .time, body .timer-box .time {
+  width: calc(100% / 5);
+  height: 200px;
+  text-align: center;
+  color: white;
+}
+
+html .timer-box .time .arrow, body .timer-box .time .arrow {
+  font-size: 45px;
+}
+
+html .controls, body .controls {
+  position: fixed;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 150px;
+}
+
+html .controls button, body .controls button {
+  width: 250px;
+  height: 70px;
+  border: none;
+  border-radius: 40px;
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+html .controls .start, body .controls .start {
+  background-color: #57A773;
+  -webkit-transition: background-color 2s;
+  transition: background-color 2s;
+}
+
+html .controls .start:hover, body .controls .start:hover {
+  background-color: #3ac098;
+}
+
+html .controls .stop, body .controls .stop {
+  background-color: #DF3B57;
+  -webkit-transition: background-color 2s;
+  transition: background-color 2s;
+}
+
+html .controls .stop:hover, body .controls .stop:hover {
+  background-color: #f7506b;
+}
+
+html .controls .resume, body .controls .resume {
+  background-color: #484D6D;
+  -webkit-transition: background-color 2s;
+  transition: background-color 2s;
+}
+
+html .controls .resume:hover, body .controls .resume:hover {
+  background-color: #6e749c;
+}
+/*# sourceMappingURL=timer.css.map */
